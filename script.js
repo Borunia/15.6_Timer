@@ -89,8 +89,8 @@ saveScore.addEventListener('click', function () {
 
 const resetSaveScore = document.getElementById('resetBoard');
 resetSaveScore.addEventListener('click', function () {
-    var appendlist = document.getElementsByTagName('li');
-    var results = document.getElementById('results');
+    let appendlist = document.getElementsByTagName('li');
+    let results = document.getElementById('results');
        console.log(appendlist);
     results.removeChild(appendlist[0]);
     }
