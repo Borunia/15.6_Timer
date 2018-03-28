@@ -69,29 +69,29 @@ function pad0(value) {
 const stopwatch = new Stopwatch(
 document.querySelector('.stopwatch'));
 
-let startButton = document.getElementById('start');
+const startButton = document.getElementById('start');
 startButton.addEventListener('click', () => stopwatch.start());
 
-let stopButton = document.getElementById('stop');
+const stopButton = document.getElementById('stop');
 stopButton.addEventListener('click', () => stopwatch.stop());
 
-let clearButton = document.getElementById('reset');
+const clearButton = document.getElementById('reset');
 clearButton.addEventListener('click', () => stopwatch.resetClock());
 
-let saveScore = document.getElementById('save');
+const saveScore = document.getElementById('save');
 saveScore.addEventListener('click', function () {
-    var list = document.createElement('li');
-    var results = document.querySelector('.stopwatch').textContent;
+    let list = document.createElement('li');
+    let results = document.querySelector('.stopwatch').textContent;
         list.innerHTML = results;
     document.getElementById('results').appendChild(list);
   }
 );
 
-let resetSaveScore = document.getElementById('resetBoard');
+const resetSaveScore = document.getElementById('resetBoard');
 resetSaveScore.addEventListener('click', function () {
     var appendlist = document.getElementsByTagName('li');
     var results = document.getElementById('results');
-        console.log(appendlist);
+       console.log(appendlist);
     results.removeChild(appendlist[0]);
     }
 );
